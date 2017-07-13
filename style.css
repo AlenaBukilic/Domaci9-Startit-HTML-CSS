@@ -1,0 +1,576 @@
+/* 00. general */
+/* 01. header */
+/* 02. about */
+/* 03. work */
+/* 04. services */
+/* 05. employement */
+/* 06. skills */
+/* 07. education */
+/* 08. quote */
+/* 09. blog */
+/* 10. contact */
+/* 11. footer */
+/* 12. small screen */
+
+
+/* 00. general */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.section {
+	display: flex;
+	padding: 50px;
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}
+
+/* 01. header */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.hidden li a {
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	padding: 10px;
+}
+
+.parent {
+	position: fixed;
+	top: 0;
+  	left: 0;
+  	margin: auto;
+  	width: 100%;
+  	z-index: 1;
+}
+
+.container-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+.container-nav h1 {
+	margin-left: 5%;
+}
+
+.container-nav nav {
+	margin-right: 5%;
+	font-size: 30px;
+}
+
+.cover {
+	background-image: url("images/cover1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #242424;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	position: absolute;
+    margin-top: 15%;
+    margin-left: 40%;
+    text-align: center;
+    padding: 20px;
+    outline: 1px double #242424;
+    outline-offset: 8px;
+}
+
+.box h3 {
+	outline: none;
+}
+
+/* 02. about */
+
+.about {
+	display: flex;
+	height: 448px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.left {
+	max-width: 50%;
+}
+
+.right {
+	max-width: 50%;
+	margin: 15% auto;
+}
+
+.untoggled {
+	display: none;
+}
+
+td:nth-child(1) {
+	font-size: 15px;
+	font-weight: 900;
+}
+
+.about img {
+	filter: sepia(100%);
+}
+
+.table-soc {
+	margin: 10% auto;
+
+}
+
+.table-soc td {
+	padding: 10px;
+	font-size: 20px;
+}
+
+.table-soc a:hover {
+	color: rgb(224, 67, 20);
+}
+
+/* 03. work */
+
+.work {
+	background-color: #f6f6f6;
+}
+
+.left2 {
+	width: 40%;
+    padding: 100px;
+    color: #c1c1c1;
+}
+
+.left2 p {
+	color: #242424;
+}
+
+.right2 {
+	display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.work-pictures {
+	width: 350px;
+	height: 350px;
+	filter: sepia(100%);
+	overflow: hidden;
+	position: relative;
+
+}
+
+.work-pictures:hover {
+	filter: unset;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+ 	height: 100%;
+  	width: 100%;
+  	transition: all .5s ease-in-out;
+}
+
+.work-pictures:hover .overlay {
+    opacity: 0.8;
+    background-color: rgb(224, 67, 20);
+    transform: scale(1.1);
+}
+
+.overlay h4 {
+	display: none;
+}
+
+.overlay:hover h4 {
+	color: #242424;
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	display: inline;
+}
+
+
+/* 04. services */
+
+
+.services-tags {
+	width: 200px;
+	height: 200px;
+	padding: 15px;
+}
+
+.services-tags span {
+	color: #e04314;
+	font-size: 20px;
+}
+
+/* 05. employement */
+
+.employement {
+	background-color: #f6f6f6;
+    display: flex;
+}
+
+.employement-tags {
+	width: 300px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+	outline: 1px double #dadada;
+	outline-offset: 5px;
+	background-color: #fff;
+}
+
+/* 06. skills */
+
+.skills-tags {
+	width: 500px;
+}
+
+.skills-tags span {
+	color: #242424;
+	font-style: italic;
+}
+
+.right2 {
+	justify-content: center;
+}
+
+.progres-bar {
+	width: 100%;
+    background-color: #f5f3f3;
+    height: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.progres {
+	height: 6px;
+    background-color: #e04314;
+    top: 2px;
+    position: absolute;
+    left: 2px;
+}
+
+.tip0 {
+	width: 85%;
+}
+
+.tip1 {
+	width: 75%;
+}
+
+.tip2 {
+	width: 10%;
+}
+
+.tip3 {
+	width: 15%;
+}
+
+.tip4 {
+	width: 80%;
+}
+
+/* 07. education */
+
+.education {
+	background-color: #f6f6f6;
+   
+}
+
+/* 08. quote */
+
+.quote {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.cover2 {
+	background: url(images/quote.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	display: flex;
+	filter: sepia(100%);
+}
+
+.quote-text{
+	margin: 10% auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* 09. blog */
+
+.center {
+	text-align: center;
+    width: 40%;
+    margin: 5% auto;
+}
+
+.blog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.blog-post {
+
+	width: 300px;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+	background-color: #fff;
+	box-shadow: -2px -2px 8px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.blog-post img {
+	border-radius: 50%;
+	width: 50%;
+	margin: 0 28%;
+}
+
+.blog-post h4 {
+	border-bottom: 1px solid #eaeaea;
+	width: 70%;
+}
+
+/* 10. contact */
+
+.contact {
+	background-color: #f6f6f6;
+    
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 30px;
+	width: 100%;
+}
+
+input {
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #242424;
+	background-color: #f6f6f6;
+	font-size: 15px;
+	font-family:'Montserrat', sans-serif;
+	outline: none;
+}
+
+textarea {
+	height: 60px;
+	border: none;
+	border-bottom: 1px solid #242424;
+	background-color: #f6f6f6;
+	font-size: 15px;
+	font-family:'Montserrat', sans-serif;
+	outline: none;
+}
+
+button {
+	height: 50px;
+	border: 1px solid #242424;
+	background-color: #f6f6f6;
+	font-size: 15px;
+	font-family:'Montserrat', sans-serif;
+}
+
+button:hover {
+	background-color: rgba(224, 67, 20, 0.7);
+}
+
+
+.forma {
+	justify-content: flex-start;
+}
+
+/* 11. footer */
+
+.social {
+	display: flex;
+	flex-direction: row;
+}
+
+footer button {
+	width: 100%;
+	background-color: #242424;
+	border: 1px solid #f6f6f6;
+	color: #fff;
+}
+
+.fb:hover {
+	background-color: #3b5998;
+	border: none;
+}
+
+.in:hover {
+	background-color: #C92BB7;
+	border: none;
+}
+
+.gp:hover {
+	background-color: #d34836;
+	border: none;
+}
+
+.logo {
+	width: 100%;
+	background-color: #242424;
+	color: #fff;
+	text-align: center;
+	height: 150px;
+	position: relative;
+}
+
+.logo p {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 10px;
+}
+
+/* 12. small screen */
+
+@media screen and (max-width: 700px)
+{
+
+	.hidden ul {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.hidden li a {
+		font-size: 10px;
+		font-weight: 100;
+	}
+
+	.box {
+		margin: 25%;
+		width: 50%;
+		height: auto;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left2 {
+		width: auto;
+		padding: 20px;
+	}
+
+	.right2 {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.work-pictures {
+		width: auto;
+		height: auto;
+	}
+
+	.overlay:hover {
+		width: auto;
+		height: auto;
+	}
+
+	.overlay:hover h4 {
+		top: 30%;
+		left: 25%;
+
+	}
+
+	.services-tags {
+		width: auto;
+		height: auto;
+	}
+
+
+	.skills-tags {
+		width: auto;
+		padding-top: 10px;
+	}
+
+	.employement-tags {
+		width: auto;
+		height: auto;
+	}
+
+	.blog-post {
+		width: auto;
+	}
+
+	.logo {
+		height: 60px;
+	}
+
+	.logo p {
+		width: 50%;
+		top: 25%;
+		left: 25%;
+	}
+	
+}
+
+@media screen and (max-width: 350px) {
+	table {
+		font-size: 10px;
+	}
+
+	.overlay:hover h4 {
+		font-size: 12px;
+
+	}
+
+}
