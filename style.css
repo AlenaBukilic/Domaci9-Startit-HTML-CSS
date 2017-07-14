@@ -479,13 +479,25 @@ footer button {
 {
 
 	.hidden ul {
-		display: flex;
 		flex-direction: column-reverse;
+		margin: 0;
+		margin-top: 200px;
 	}
 
 	.hidden li a {
 		font-size: 10px;
 		font-weight: 100;
+
+	}
+
+	.hidden ul li {
+		margin-left: 40px;
+
+	}
+
+	.hidden span {
+		margin-left: 115px;
+    	margin-top: 40px;	
 	}
 
 	.box {
